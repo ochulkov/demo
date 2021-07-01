@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="68aa00d1c71149e6bd71c05f893af2df" Name="Diagram1" >
+        <EntityTypeShape EntityType="ochulkovModel.Agent" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="ochulkovModel.AgentPriorityHistory" Width="1.5" PointX="5.25" PointY="19.375" />
+        <EntityTypeShape EntityType="ochulkovModel.AgentType" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="ochulkovModel.Material" Width="1.5" PointX="3" PointY="11.125" />
+        <EntityTypeShape EntityType="ochulkovModel.MaterialCountHistory" Width="1.5" PointX="5.25" PointY="16.625" />
+        <EntityTypeShape EntityType="ochulkovModel.MaterialType" Width="1.5" PointX="0.75" PointY="12.125" />
+        <EntityTypeShape EntityType="ochulkovModel.Product" Width="1.5" PointX="3" PointY="6" />
+        <EntityTypeShape EntityType="ochulkovModel.ProductCostHistory" Width="1.5" PointX="5.25" PointY="9.875" />
+        <EntityTypeShape EntityType="ochulkovModel.ProductMaterial" Width="1.5" PointX="5.25" PointY="3.75" />
+        <EntityTypeShape EntityType="ochulkovModel.ProductSale" Width="1.5" PointX="5.25" PointY="6.5" />
+        <EntityTypeShape EntityType="ochulkovModel.ProductType" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="ochulkovModel.Shop" Width="1.5" PointX="5.25" PointY="22.125" />
+        <EntityTypeShape EntityType="ochulkovModel.Supplier" Width="1.5" PointX="5.25" PointY="13.5" />
+        <AssociationConnector Association="ochulkovModel.FK_Agent_AgentType" />
+        <AssociationConnector Association="ochulkovModel.FK_AgentPriorityHistory_Agent" />
+        <AssociationConnector Association="ochulkovModel.FK_ProductSale_Agent" />
+        <AssociationConnector Association="ochulkovModel.FK_Shop_Agent" />
+        <AssociationConnector Association="ochulkovModel.FK_Material_MaterialType" />
+        <AssociationConnector Association="ochulkovModel.FK_MaterialCountHistory_Material" />
+        <AssociationConnector Association="ochulkovModel.FK_ProductMaterial_Material" />
+        <AssociationConnector Association="ochulkovModel.FK_Product_ProductType" />
+        <AssociationConnector Association="ochulkovModel.FK_ProductCostHistory_Product" />
+        <AssociationConnector Association="ochulkovModel.FK_ProductMaterial_Product" />
+        <AssociationConnector Association="ochulkovModel.FK_ProductSale_Product" />
+        <AssociationConnector Association="ochulkovModel.MaterialSupplier" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
